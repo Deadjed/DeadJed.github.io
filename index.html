@@ -39,7 +39,7 @@
     <header class="hero bg-dark text-white text-center d-flex align-items-center">
         <div class="container">
             <h1 class="display-4">Hi, I'm Jed</h1>
-            <p class="lead">AI & Machine Learning Enthusiast | Software Engineer</p>
+            <p class="lead">AI & Machine Learning Enthusiast | Student</p>
             <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
         </div>
     </header>
@@ -58,15 +58,15 @@
                         <li class="mb-4">
                             <h4>Bachelor of Computer Science</h4>
                             <p class="mb-1">Minor: Artificial Intelligence / Machine Learning</p>
-                            <p class="text-muted">RMIT University (Expected completion: October 2024)</p>
+                            <p class="text-muted">RMIT University 2024</p>
                         </li>
                         <li class="mb-4">
                             <h4>Diploma of Information Technology</h4>
-                            <p class="text-muted">Deakin College</p>
+                            <p class="text-muted">Deakin College 2022</p>
                         </li>
                         <li class="mb-4">
                             <h4>CS50: Introduction to Computer Science</h4>
-                            <p class="text-muted">EdX/HarvardX</p>
+                            <p class="text-muted">EdX/HarvardX 2021</p>
                         </li>
                     </ul>
                 </div>
@@ -135,7 +135,7 @@
                 <div class="col-md-12">
                     <h4>DJ Mix: Closing The Office</h4>
                     <p>This mix was recorded at my last gig at 'The Office' nightclub before it closed down. It's a blend of bass house tracks best enjoyed late into the night:</p>
-                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1528408198&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1528408198&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                     <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
                         <a href="https://soundcloud.com/jed-pauckner" title="DeadJed" target="_blank" style="color: #cccccc; text-decoration: none;">DeadJed</a> · 
                         <a href="https://soundcloud.com/jed-pauckner/closing-the-office-mix" title="Closing The Office (Mix)" target="_blank" style="color: #cccccc; text-decoration: none;">Closing The Office (Mix)</a>
@@ -152,18 +152,19 @@
             <h2 class="section-title text-center">Contact Me</h2>
             <div class="row justify-content-center mt-4">
                 <div class="col-md-6">
-                    <form>
+                    <!-- Form action updated to Formspree -->
+                    <form action="https://formspree.io/f/xqazoklp" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send</button>
                     </form>
