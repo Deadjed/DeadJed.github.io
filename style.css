@@ -89,3 +89,8 @@ footer {
   left: 30px;
   border-color: transparent white transparent transparent;
 }
+
+.icon-link i {
+    font-size: 2rem; /* Adjust the size as needed */
+    margin: 0 10px; /* Add spacing between icons */
+}
