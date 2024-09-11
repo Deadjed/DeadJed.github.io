@@ -4,6 +4,7 @@ body {
 
 .hero {
     height: 100vh;
+    padding-top: 70px;
     background: url('path-to-your-hero-image.jpg') center center/cover no-repeat;
 }
 
