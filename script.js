@@ -1,3 +1,4 @@
+console.log('Script is running');
 // Smooth scroll functionality
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -9,6 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Starfield animation setup
+
 const canvas = document.getElementById('starfield');
 const ctx = canvas.getContext('2d');
 

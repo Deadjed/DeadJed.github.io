@@ -26,6 +26,7 @@ canvas {
             width: 100vw; /* Full width */
             height: 100vh; /* Full height */
             background-color: black; /* Set a dark background for better visibility of stars */
+            border: 2px solid red; /* Added for debugging */
         }
 
 .hero {
