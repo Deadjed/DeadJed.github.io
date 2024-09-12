@@ -13,20 +13,16 @@ body {
     margin-bottom: 1rem;
 }
 
-footer {
-    background-color: #343a40;
-}
-
+/* General timeline styles */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .timeline-container {
   padding: 10px 40px;
   position: relative;
-  background: inherit;
   width: 50%;
 }
 
@@ -38,56 +34,105 @@ footer {
   left: 50%;
 }
 
+/* Timeline content box styling */
 .timeline-content {
   padding: 20px;
   background-color: white;
   position: relative;
   border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.time {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* The vertical line running down the middle */
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
   background-color: #343a40;
+  top: 0px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  /*z-index: 1;*/
+}
+
+/* The circle marking the timeline */
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #333;
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  z-index: -1;
 }
 
-.time {
-  color: #6c757d;
-  font-size: 14px;
-  margin-top: 5px;
-  display: block;
-}
-
-.timeline-container::after {
+.timeline-container::before {
   content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: #343a40;
-  border: 4px solid white;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 4px solid #333;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
 }
 
-.timeline-container.left::after {
-  left: -17px;
-}
-
 .timeline-container.left::before {
-  right: 30px;
-  border-color: transparent transparent transparent white;
+  left: 100%;
+  margin-left: -10px;
 }
 
 .timeline-container.right::before {
-  left: 30px;
-  border-color: transparent white transparent transparent;
+  left: -10px;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+  /* Remove the middle vertical line on mobile */
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Stack the containers vertically and align to the left */
+  .timeline-container.left,
+  .timeline-container.right {
+    left: 0;
+  }
+
+  /* Move the dots to the left for all items */
+  .timeline-container.right::before {
+    left: 31px;
+    transform: none;
+    margin-left: -10px;
+  }
+  /* Move the dots to the left for all items */
+  .timeline-container.left::before {
+    left: 31px;
+    transform: none;
+  }
+
+}
+
+
+footer {
+    background-color: #343a40;
 }
 
 .icon-link i {
