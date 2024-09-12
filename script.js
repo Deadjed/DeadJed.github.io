@@ -22,7 +22,7 @@ let screen = {
     centerX: window.innerWidth / 2,
     centerY: window.innerHeight / 2,
 };
-let starSpeed = 0.05;
+let starSpeed = 0.35;
 
 function initStars() {
     stars = [];
