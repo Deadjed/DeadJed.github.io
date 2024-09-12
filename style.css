@@ -26,7 +26,6 @@ canvas {
             width: 100vw; /* Full width */
             height: 100vh; /* Full height */
             background-color: black; /* Set a dark background for better visibility of stars */
-            border: 2px solid red; /* Added for debugging */
         }
 
 .hero {
@@ -58,6 +57,10 @@ canvas {
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.bg-dark {
+  opacity: 0.95;
 }
 
 /* General timeline styles */

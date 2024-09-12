@@ -15,7 +15,7 @@ const canvas = document.getElementById('starfield');
 const ctx = canvas.getContext('2d');
 
 let stars = [];
-const numStars = 500;
+const numStars = 200;
 let screen = {
     width: window.innerWidth,
     height: window.innerHeight,
