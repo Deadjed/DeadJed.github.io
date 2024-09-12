@@ -114,17 +114,6 @@ canvas {
 }
 
 /* The circle marking the timeline */
-.timeline::before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #333;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: -1;
-}
 
 .timeline-container::before {
   content: '';
