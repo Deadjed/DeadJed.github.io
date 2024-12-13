@@ -136,6 +136,16 @@ canvas {
   left: -10px;
 }
 
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    margin-right: 10px; /* Spacing between images */
+}
+
+
 /* Media Queries for Mobile */
 @media screen and (max-width: 768px) {
   /* Remove the middle vertical line on mobile */
