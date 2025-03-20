@@ -63,6 +63,11 @@ canvas {
   opacity: 0.95;
 }
 
+/* Card Images */
+.card-img-top {
+	height: 100px;
+	width: fit-content;
+
 /* General timeline styles */
 .timeline {
   position: relative;
